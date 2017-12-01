@@ -1,0 +1,15 @@
+
+## Helper Function
+
+# Setup
+function setAttrs(el, attrs) {
+  for(var key in attrs) {
+    el.setAttribute(key, attrs[key]);
+  }
+}
+
+# Invoke
+setAttributes(_h2, {
+	"class": "h2Css",
+	"id" : "h2One"
+});
