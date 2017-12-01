@@ -1,14 +1,14 @@
 
 ## Helper Function
 
-# Setup
+// Setup
 function setAttrs(el, attrs) {
   for(var key in attrs) {
     el.setAttribute(key, attrs[key]);
   }
 }
 
-# Invoke
+// Invoke
 setAttributes(_h2, {
 	"class": "h2Css",
 	"id" : "h2One"
