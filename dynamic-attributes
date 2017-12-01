@@ -9,4 +9,8 @@ function setAttrs(el, attrs) {
 }
 
 // Invoke
+setAttributes(_h2, {
+  "class": "h2Css",
+  "id": "h2One"
+});
 
