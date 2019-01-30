@@ -7,10 +7,19 @@ function setAttrs(el, attrs) {
     el.setAttribute(key, attrs[key]);
   }
 }
-
 // Invoke
 setAttributes(_h2, {
   "class": "h2Css",
   "id": "h2One"
 });
 
+
+// Setup
+function clearInputs(inputs, i) {
+  inputs = document.querySelectorAll('input');
+    for (i = 0; i < inputs.length; i++) {
+      inputs[i].value = '';
+    }
+}
+// Invoke
+clearInputs();
