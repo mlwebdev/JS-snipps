@@ -1,8 +1,28 @@
 
-## Helper Function
+## Helper Functions
 
 // Setup
-function setAttrs(el, attrs) {
+function dynamic_select(el_target_id, array_name, child_el, child_text, el_target, child, i){
+  el_target = document.getElementById(el_target_id);
+  for(i = 0; i < array_name.length; i++) {
+    child_text = array_name[i];
+    child = document.createElement(child_el);
+    child.textContent = child_text;
+    child.value = child_text;
+    el_target.appendChild(child);
+  }
+};
+
+// Invoke
+*** example *** 
+dynamic_selec("years", years_array, "opyion");
+
+
+
+
+
+// Setup
+function setAttributes(el, attrs) {
   for(var key in attrs) {
     el.setAttribute(key, attrs[key]);
   }
@@ -12,6 +32,8 @@ setAttributes(_h2, {
   "class": "h2Css",
   "id": "h2One"
 });
+
+
 
 
 // Setup
