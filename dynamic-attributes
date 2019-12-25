@@ -12,10 +12,19 @@ function dynamic_select(el_target_id, array_name, child_el, child_text, el_targe
     el_target.appendChild(child);
   }
 };
-
 // Invoke
 *** example *** 
 dynamic_selec("years", years_array, "opyion");
+
+
+
+
+// Setup
+function arrPush(ary, a) {
+    ary.push(a);
+}
+// Invoke
+arrPush(array_name, value);
 
 
 
